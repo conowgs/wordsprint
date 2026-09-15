@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+body { margin: 0; font-family: ui-sans-serif, system-ui, sans-serif; background: #171528; color: #fff9ec; }
+.font-serif { font-family: "Fraunces", Georgia, serif; }
+
+/* Respect reduced motion globally */
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+}

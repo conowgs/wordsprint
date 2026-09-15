@@ -1,0 +1,11 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "moduleResolution": "Bundler",
+    "types": ["node"],
+    "paths": { "@wordsprint/shared": ["../shared/src/index.ts"] }
+  },
+  "include": ["src/**/*"]
+}

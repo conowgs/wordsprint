@@ -1,0 +1,12 @@
+# Local Postgres + Redis for developing the production adapters.
+services:
+  redis:
+    image: redis:7-alpine
+    ports: ["6379:6379"]
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: wordsprint
+      POSTGRES_PASSWORD: wordsprint
+      POSTGRES_DB: wordsprint
+    ports: ["5432:5432"]
